@@ -99,7 +99,7 @@ fabric.properties
 [Ll]ib64
 [Ll]ocal
 [Ss]cripts
-pyvenv.cfg
+pyvenv.cf
 .venv
 pip-selfcheck.json
 
