@@ -3,9 +3,10 @@ import json
 
 faker = Faker()
 
+
 def payload_create_booking():
     payload = {
-        "firstname": "Jim",
+        "firstname": "Nitish",
         "lastname": "Brown",
         "totalprice": 111,
         "depositpaid": True,
@@ -16,6 +17,7 @@ def payload_create_booking():
         "additionalneeds": "Breakfast"
     }
     return payload
+
 
 def payload_create_booking_dynamic():
     json_payload = {
@@ -31,6 +33,7 @@ def payload_create_booking_dynamic():
         "additionalneeds": faker.random_element(elements=("Breakfast", "Parking", "WiFi", "Extra Bed"))
     }
     return json_payload
+
 
 def payload_create_token():
     payload = {
