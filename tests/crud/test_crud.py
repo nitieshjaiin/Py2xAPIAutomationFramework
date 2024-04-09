@@ -18,7 +18,7 @@ from src.utils.utils import Util
 
 
 class TestCrudBooking(object):
-    @pytest.fixture
+    @pytest.fixture()
     def create_token(self):
         response = post_request(url=APIConstants.url_create_token(),
                                 headers=Util.common_headers_json(self),
@@ -30,7 +30,7 @@ class TestCrudBooking(object):
         verify_json_key_for_not_null_token(response.json()["token"])
         return response.json()["token"]
 
-    @pytest.fixture
+    @pytest.fixture()
     def get_booking_id(self):
         payload = payload_create_booking()
         response = post_request(url=APIConstants.url_create_booking(),
