@@ -1,6 +1,7 @@
 class Util(object):
     # class or functions
 
+    @staticmethod
     def common_headers_json(self):
         headers = {
             "Content-Type": "application/json"
